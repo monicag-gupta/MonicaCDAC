@@ -38,6 +38,29 @@ public class HelloController {
 
 
 
+Updated HelloController:
+
+
+package SBHWGr.SBHW;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+	
+	 	@GetMapping("/")
+	    public String sayHello() {
+	        return "Hello World from Spring Boot 4!";
+	    }
+	 	@GetMapping("/emp")
+	    public Emp getAnEmp() {
+	        return new Emp(101,"John");
+	    }
+}
+
+
+
 
 
 
