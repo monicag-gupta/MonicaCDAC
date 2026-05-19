@@ -1,0 +1,8 @@
+Employee (int ecode, String name, int age, int sal)
+Conditions:
+If age is between : 14 and 60, enter details in the database
+Else give error messages
+If sal is negative then do not enter details in the db , rather give error messages
+
+
+Create JPA-Spring Boot project for CRUD of the above entity and conditions 
