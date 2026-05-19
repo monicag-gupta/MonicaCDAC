@@ -1,0 +1,237 @@
+Example CRUD JPA
+SB, HBM and Postman
+
+Queries in MySQL:
+
+Create database mydb;
+Use mydb;
+
+CREATE TABLE employee (
+    id int PRIMARY KEY,
+    name VARCHAR2(100),
+    department VARCHAR2(100)
+);
+
+
+
+File > New > Spring Starter Project
+Project Name: EmployeeAPI
+Package: com.example.employeeapi
+Packaging: Jar
+Java Version: 21
+Spring Boot Version: 3.5.x
+Dependencies:
+Spring Web
+Spring Data JPA
+Oracle Driver/ MySQLConnector
+Spring Boot DevTools (optional)
+Click Finish
+
+
+
+
+
+spring.datasource.url=jdbc:mysql://localhost:3306/mydb
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+server.port=8080
+
+
+
+
+com.example.employeeapi.model.Employee:
+
+package com.example.employeeapi.model;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "employee")
+public class Employee {   
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String name;
+    private String department;
+    public Employee() {}
+    public Employee(String name, String department) {
+        this.name = name;
+        this.department = department;
+    }
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public String getDepartment() { return department; }
+    public void setDepartment(String department) { this.department = department; }
+}
+
+
+
+
+
+com.example.employeeapi.repository.EmployeeRepository:
+
+package com.example.employeeapi.repository;
+
+import com.example.employeeapi.model.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+}
+
+
+
+
+
+
+com.example.employeeapi.service.EmployeeService:
+
+package com.example.employeeapi.service;
+
+import com.example.employeeapi.model.Employee;
+import com.example.employeeapi.repository.EmployeeRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class EmployeeService {
+
+    @Autowired
+    private EmployeeRepository repo;
+
+    public Employee save(Employee emp) {
+        return repo.save(emp);
+    }
+
+    public List<Employee> getAll() {
+        return repo.findAll();
+    }
+
+    public Optional<Employee> getById(int id) {
+        return repo.findById(id);
+    }
+
+    public void delete(int id) {
+        repo.deleteById(id);
+    }
+
+    public Employee update(Employee emp) {
+        return repo.save(emp);
+    }
+}
+
+
+
+
+
+
+
+
+com.example.employeeapi.controller.EmployeeController:
+
+package com.example.employeeapi.controller;
+
+import com.example.employeeapi.model.Employee;
+import com.example.employeeapi.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Optional;
+
+@RestController
+@RequestMapping("/api/employees")
+public class EmployeeController {
+
+    @Autowired
+    private EmployeeService service;
+
+    @PostMapping
+    public Employee addEmployee(@RequestBody Employee emp) {
+        return service.save(emp);
+    }
+
+    @GetMapping
+    public List<Employee> getAllEmployees() {
+        return service.getAll();
+    }
+
+    @GetMapping("/{id}")
+    public Optional<Employee> getEmployee(@PathVariable int id) {
+        return service.getById(id);
+    }
+
+    @PutMapping("/{id}")
+    public Employee updateEmployee(@PathVariable int id, @RequestBody Employee emp) {
+        emp.setId(id);
+        return service.update(emp);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteEmployee(@PathVariable int id) {
+        service.delete(id);
+    }
+}
+
+
+
+
+
+
+
+Right – click the project->
+Run -> Maven Clean
+Run -> Maven Install
+Run -> Spring Boot : run
+Open Postman
+
+
+
+
+
+Create
+POST
+http://localhost:8080/api/employees
+{ "id":102, "name": "Alice", "department": "HR" }
+
+
+Get All
+GET
+http://localhost:8080/api/employees
+
+
+
+Get by ID
+GET
+http://localhost:8080/api/employees/102
+
+
+
+Update
+PUT
+http://localhost:8080/api/employees/102
+{"id":102, "name": "Alice", "department": "Finance" }
+
+
+Delete
+DELETE
+http://localhost:8080/api/employees/102
+
+
+
+
+
+
+
+
+
