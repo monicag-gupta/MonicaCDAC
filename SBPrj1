@@ -62,6 +62,39 @@ public class HelloController {
 
 
 
+Emp:
+
+package SBHWGr.SBHW;
+
+public class Emp {
+	int ecode;
+	String ename;
+	public int getEcode() {
+		return ecode;
+	}
+	public void setEcode(int ecode) {
+		this.ecode = ecode;
+	}
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	public Emp(int ecode, String ename) {
+		this.ecode = ecode;
+		this.ename = ename;
+	}
+	public Emp() {}
+//	@Override
+//	public String toString() {
+//		return "Emp [ecode=" + ecode + ", ename=" + ename + "]";
+//	}
+//	
+
+}
+
+
 
 
 
