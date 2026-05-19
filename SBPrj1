@@ -98,4 +98,9 @@ public class Emp {
 
 
 
+Mvn build:
+Make the goal as :
+clean install spring-boot:run
+
+
 
