@@ -117,4 +117,40 @@
 
 
 
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script>
+            function inputbox(){
+                prompt("Enter name:")
+            }
+            // x="5"
+            // y=5
+            // alert(x===y)
+            // x=confirm("open this page")
+            // alert(x)
+        </script>
+    </head>
+
+    <body>
+        <!-- <form action="First.html">
+        Enter Name:<input type="text">
+        <br>
+        <input type="submit" onclick="return confirm('Are you an employee');" value="Employee">
+        </form> -->
+        
+        <!-- <script>
+            function add(x,y){
+                return x+y;
+            }
+            document.write("function:"+add+"<hr>"+add(3,5))
+        </script> -->
+        <script src="F12.js"></script>
+        <h3 onclick="msgbox()">Msgbox</h3>
+        <h2 onclick="inputbox()">Prompt display</h2>
+        <h1 onclick="alert('H1 clicked')">Hello World</h1>
+    </body>
+
+</html>
+
 
