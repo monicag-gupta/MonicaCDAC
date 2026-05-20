@@ -291,6 +291,88 @@
 
 
 
+<!DOCTYPE html><html><body>
+	<h2>JavaScript async / await</h2>
+	<p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+	<h1 id="demo"></h1>
+	<script>
+		async function myDisplay() {
+			let myPromise = new Promise(function(resolve) {
+				setTimeout(function() {resolve("JS is Great !!")}, 3000);
+			});
+			document.getElementById("demo").innerHTML = await myPromise;
+		}
+		myDisplay();
+	</script>
+</body></html>
+
+
+
+
+
+
+
+
+<html><body><script>
+
+ // Creates a new Map object
+   var map = new Map([[1 , 10], [2 , 20]]);  //or new Map();
+// Adds new elements 
+   map.set('first', 'a');                                
+
+// Checks whether an element having a key of "2" exists in the map.
+   document.write(map.has(2) + "<br>");
+// Retrieves the element having key of "first". Prints "a"
+   document.write(map.get('first') + "<br>");
+// Retrieves the element having key of "empty". Prints "undefined"
+   document.write(map.get('empty') + "<br>");
+//prints the map entire list
+let text = "";
+map.forEach (function(value, key) {
+  text += key + ' = ' + value + "|&nbsp;&nbsp;"; })
+// for (const x of map.entries()) text += x;
+document.write(text + "<br>");
+document.write(map.size + "<br>");  //3
+map.clear();  // deletes all the value 
+document.write(map.size);
+</script></body></html>
+
+
+
+
+
+
+
+
+
+<html><body><script>
+// Creates a new WeakMap object
+   var weakMap = new WeakMap();
+// Defines objects that will be used a key in the map
+   var obj4 = {d: 4};
+   var obj5 = {e: 5};
+// Adds new elements having an Object as its key and a String as its value
+   weakMap.set(obj4, 'fourth');
+   weakMap.set(obj5, 'fifth');
+// Adds a new element having a Function as its key and a Number as its value
+   weakMap.set(function(){}, 7);
+// Checks whether an element having as its key the value of objKey4 exists in the weak map.
+   document.write(weakMap.has(obj4) + "<br>");
+// Retrieve the value of element associated with the key having the value of objKey4. Prints "first"
+   document.write(weakMap.get(obj4) + "<br>");
+// Deletes the element having key of objKey4. Prints "true"
+   document.write(weakMap.delete(obj4) + "<br>");
+// Deletes all the elements of the weak map
+   weakMap.clear();
+</script></body></html>
+
+
+
+
+
+
+
+
 
 
 
