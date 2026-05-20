@@ -1,0 +1,54 @@
+First.html:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        Data in a Paragraph:
+        <p>This is a new Para</p>
+        This is a div:
+        <div>
+            This is a new div<strong>strong</strong>
+            <b>Bold</b><i>Italics</i>
+        </div>
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+        </ul>
+        <ol>
+            <li>OItem1</li>
+            <li>OItem2</li>
+        </ol>
+        <table border="1">
+            <tr>
+                <th>Name</th><th>Sal</th>
+            </tr>
+            <tr>
+                <td>John</td><td>1</td>
+            </tr>
+             <tr>
+                <td>Jane</td><td>2</td>
+            </tr>
+        </table>
+    </body>
+
+</html>
+
+
+
+Second.html:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page2</title>
+    </head>
+    <body>
+        <a href="First.html" target="_blank">First Page</a>
+        <br>
+        <img alt="nature image" src="myImg.jpg" height="100" width="100">
+    </body>
+
+</html>
