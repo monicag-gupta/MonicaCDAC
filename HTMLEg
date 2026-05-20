@@ -49,6 +49,12 @@ Second.html:
         <a href="First.html" target="_blank">First Page</a>
         <br>
         <img alt="nature image" src="myImg.jpg" height="100" width="100">
+        <hr>
+        <audio controls="controls">		
+            <source src="Piano.mp3" type="audio/mp3">	
+        </audio>
+        <video height="200" width="200" src="myVideo.mp4" autoplay controls ></video>
+
     </body>
 
 </html>
