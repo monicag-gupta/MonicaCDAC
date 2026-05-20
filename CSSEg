@@ -145,3 +145,29 @@ button:hover {
 
 
 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyCSS Eg</title>
+        <style>
+            h1{color:green;}
+        </style>
+        <link href="F9.css" rel="stylesheet">
+        <style>
+            h2{color:green;}
+        </style>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <h1 style="color:lightgreen">World</h1>
+        <h2>This is h2</h2>
+    </body>
+</html>
+
+
+
+F9.css:
+h1{color:blue;}
+h2{color:aqua;}
+
