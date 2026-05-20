@@ -1,0 +1,45 @@
+F6.html:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyCSS Eg</title>
+        <style>
+            h1{
+                color:blue;
+            }
+            div div p{
+                color:red;
+            }
+            #myh2,.veg{
+                color:green
+            }
+            .fruit{
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>H1 Hello World</h1>
+        <p>Para outside</p>
+        <div>
+            <p>Para inside div</p>
+            <div>
+                <p>Para in div in div</p>
+            </div>
+        </div>
+        <h2 id="myh2">H2 Tag</h2>
+        <ul>
+            <li class="veg">Carrot</li>
+            <li class="veg">Potato</li>
+            <li class="fruit">Apple</li>
+            <li class="fruit">Orange</li>
+            <li class="fruit">Guava</li>
+            <li class="veg">Onion</li>
+        </ul>
+    </body>
+</html>
+
+
+
+
