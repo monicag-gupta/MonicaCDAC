@@ -22,6 +22,12 @@ First.html:
             <li>OItem1</li>
             <li>OItem2</li>
         </ol>
+        <dl>
+            <dt>OItem1</dt>
+                <dd>About OTem1</dd>
+            <dt>OItem2</dt>
+                <dd>About OTem2</dd>
+        </dl>
         <table border="1">
             <tr>
                 <th>Name</th><th>Sal</th>
@@ -36,6 +42,9 @@ First.html:
     </body>
 
 </html>
+
+
+
 
 
 
