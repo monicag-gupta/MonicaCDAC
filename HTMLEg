@@ -58,3 +58,36 @@ Second.html:
     </body>
 
 </html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page2</title>
+    </head>
+    <body>
+        <a href="First.html" target="_blank">First Page</a>
+        <br>
+        <img alt="nature image" src="myImg.jpg" height="100" width="100">
+        <hr>
+        <audio controls="controls">		
+            <source src="Piano.mp3" type="audio/mp3">	
+        </audio>
+        <video height="50" width="50" src="myVideo.mp4"  controls ></video>
+        <hr>
+        <progress value="22" max="100"></progress><br>
+        <meter value="2" min="0" max="10">2 out of 10</meter><br>
+        <meter value="0.6">60%</meter> 
+
+    </body>
+
+</html>
+
+
+
+
+
+
