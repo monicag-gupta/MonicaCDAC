@@ -179,3 +179,42 @@
 </html>
 
 
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <button onclick="fn1();">add</button>
+        <button onclick="fn2()">sub</button>
+        <div id="res"></div>
+        <script>
+           function add(x,y){
+            return x+y;
+           }
+           function sub(x,y){
+            return x-y;
+           }
+           function Op(x,y,fn){
+            return fn(x,y);
+           }
+           function fn1()
+            {
+                document.getElementById("res").innerHTML=Op(3,4,add);
+            }
+            function fn2()
+            {
+                document.getElementById("res").innerHTML=Op(3,4,sub);
+            }
+
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
