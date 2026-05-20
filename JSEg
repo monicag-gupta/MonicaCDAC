@@ -218,3 +218,23 @@
 
 
 
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            setTimeout(fn,5000);
+            function fn(){
+                alert("I am executed post 5 sec");
+                document.write("<h1>I am written post 5 sec</h1>")
+            }
+        </script>
+        
+    </body>
+</html>
+
+
+
+
+
+
