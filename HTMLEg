@@ -100,3 +100,35 @@ Second.html:
 
 
 
+
+Third.html
+<html>
+	<head>
+		<title>	Table Eg </title>
+	</head>
+	<body>
+		<h1> Table Eg </h1>
+		<table border="1" cellspacing="20" cellpadding="20">
+			<tr>
+				<th>Name</th><th>PhNO</th><th>Skills</th>
+			</tr>
+			<tr>
+				<td>A</td><td>1</td><td>C++</td>
+			</tr>
+			<tr>
+				<td>B</td><td>2</td><td>Java</td>
+			</tr>
+			<tr>
+				<td>C</td><td>3</td><td>HTML5</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+
+
+
+
+
+
+
