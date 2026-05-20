@@ -115,6 +115,31 @@
 
 
 
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            s="";
+            a=[10,20,30,40,50,60];
+            for(x of a)
+                s += " " + x +", ";
+            document.write(s)
+            s="<hr/>"
+            for(x in a)
+                s += " " + x +", ";
+            document.write(s)
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
 
 
 <!DOCTYPE html>
