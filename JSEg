@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script>
+            //name=prompt("Enter your name:")
+            //alert("Hello " + name + " !!")
+        </script>
+    </head>
+
+    <body>
+        Enter x: <input type="text" id="x" value="0">
+        <br>
+        Enter y: <input type="text" id="y">
+        <br>
+        <button onclick="sumation();">Sum</button>
+        <br>
+        Sum:
+        <div id="res"></div>
+        <script>
+            function sumation(){
+                a=document.getElementById("x").value;
+                b=document.getElementById("y").value;
+                n1=parseInt(a);
+                n2=parseInt(b)
+                n3=n1+n2;
+                document.getElementById("res").innerHTML = n3;
+
+            }
+        </script>
+    </body>
+
+</html>
+
+
+
