@@ -128,3 +128,20 @@ function Car(){
 }
 
 export default Car
+
+
+
+Car.js:
+
+function Car(){
+  var no=5;
+  return (
+    <h1>I have {no} Cars <br/>Planning to add {add(3,4)} Cars</h1>
+  );
+}
+
+function add(x,y){
+    return x+y;
+}
+
+export default Car
