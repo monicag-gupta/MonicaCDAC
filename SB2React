@@ -25,6 +25,22 @@ commit;
 
 
 
+Spring Starter Project
+EmpService
+com.sbprj
+
+Artifact: EmpService
+Dependencies:
+Spring Web
+Spring Data JPA
+MySql Driver
+
+
+
+
+
+
+
 
 
 
