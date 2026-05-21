@@ -166,3 +166,42 @@ function add(x,y){
 }
 
 export default Car
+
+
+
+
+Car.js:
+
+var myStyle = {  
+  fontSize: 40,  
+  fontFamily: 'Courier',  
+  color: '#79d179'  
+}  
+
+function Car(){
+  var no=5;
+  return (
+    <h1>
+        I have {no} Cars 
+        <div style={myStyle}>
+            Planning to add {add(3,4)} Cars
+        </div>
+    </h1>
+  );
+}
+
+
+function add(x,y){
+    var a=prompt("Enter x");
+    var b=prompt("Enter y");
+    x=parseInt(a);
+    y=parseInt(b);
+    return x+y;
+}
+
+export default Car
+
+
+
+
+
