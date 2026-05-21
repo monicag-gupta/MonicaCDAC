@@ -80,4 +80,22 @@ export default Car
 
 
 
+Vehicle.js
+
+
+import Car from "./Car";
+import Bike from "./Bike";
+
+function Vehicle(){
+    return (
+        <div>
+            <h1>I own the following Vehicles:
+                <li><Car/></li>
+                <li><Bike/></li>
+            </h1>
+        </div>
+    );
+}
+
+export default Vehicle;
 
