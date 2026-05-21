@@ -409,7 +409,10 @@ root.render(<Timer />);
 
 
 
-Uncontrolled Forms:
+Controlled Forms:
+
+index.js:
+
 
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
