@@ -205,3 +205,21 @@ export default Car
 
 
 
+Bike.js:
+
+import React from "react";
+
+class Bike extends React.Component
+{
+render(){
+    return (
+        <div>
+            <h1>This is a bike</h1>
+        </div>
+    );
+}
+}
+
+export default Bike;
+
+
