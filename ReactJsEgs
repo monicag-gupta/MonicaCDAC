@@ -114,3 +114,17 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Vehicle/>);
 
 
+
+
+
+
+Car.js:
+
+function Car(){
+    var no=5;
+  return (
+    <h1>I have {no} Cars</h1>
+  );
+}
+
+export default Car
