@@ -89,13 +89,28 @@ import Bike from "./Bike";
 function Vehicle(){
     return (
         <div>
-            <h1>I own the following Vehicles:
+            <h1>I own the following Vehicles:</h1>
+            <ul>
                 <li><Car/></li>
                 <li><Bike/></li>
-            </h1>
+            </ul>
         </div>
     );
 }
 
 export default Vehicle;
+
+
+index.js:
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Vehicle from './Vehicle';
+
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Vehicle/>);
+
 
