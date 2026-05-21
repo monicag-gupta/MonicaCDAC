@@ -282,3 +282,20 @@ root.render(<Car />);
 
 
 
+index.js:
+
+import React, { useState } from "react";
+import ReactDOM from "react-dom/client";
+function Car() {
+  const [x, setX] = useState(0);
+  return (
+    <>
+      <h1>My button is clicked {x} times!</h1>
+      <button type="button" onClick={() => setX(x+1)}>{x}</button>
+       </>
+  );
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Car />);
+
+
