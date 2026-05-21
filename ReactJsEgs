@@ -19,3 +19,16 @@ function Car(){
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Car/>);
 
+
+
+
+
+Car.js
+
+function Car(){
+  return (
+    <h1>Hello World</h1>
+  );
+}
+
+export default Car
