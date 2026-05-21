@@ -21,3 +21,22 @@ https://nodejs.org/en/download
 
 VS Code
 https://code.visualstudio.com/download
+
+
+
+
+Install React:
+
+Install nodeJs
+Install VS Code
+
+Open VS code
+Open terminal
+type:
+node -v
+
+Install CRA:
+
+npm install -g create-react-app
+
+
