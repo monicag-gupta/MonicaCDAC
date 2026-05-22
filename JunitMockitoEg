@@ -177,4 +177,39 @@ Re-change to original values
 
 
 
+We get the output as well:
+before class
+before
+test case find max
+after
+before
+test case cube
+after
+after class
+
+
+
+
+
+Add the Test Suite
+
+Right click the project->New->other-> JUnit Test Suite
+Next
+Add the package: tests
+Add the classes for test suite
+Finish
+The Suite is added
+
+
+We get individual tests and failures result.
+Expand selection to know more about individual tests.
+As well as a summary of all tests together.
+
+
+
+
+
+
+
+
 
