@@ -21,5 +21,37 @@ Go to the folder:
 cd CDAC_Repo
 
 
+Start working with the folder
+Add a file
+Modify a file
+...
+
+
+Hello.txt
+Hello
+
+First.py
+print("Hello World")
+print("line2")
+
+Second.py
+print("World of Python")
+
+
+save your work
+
+Now go to terminal
+
+(check you are working in the repo folder)
+
+Add the files in the stash area
+git add .
+
+
+
+
+
+
+
 
 
