@@ -39,6 +39,12 @@ mvn spring-boot:run
 
 
 
+Open Swagger UI
+Open browser:
+http://localhost:8080/swagger-ui/index.html
+
+
+
 
 
 
