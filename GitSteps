@@ -7,3 +7,12 @@ The github repo:
 https://github.com/monicag-gupta/CDAC_Repo.git
 
 
+
+Commands of Git:
+
+git clone https://github.com/monicag-gupta/CDAC_Repo.git
+
+This creates a folder named CDAC_Repo
+with all the files of the repo
+plus it is connected to the online repo
+
