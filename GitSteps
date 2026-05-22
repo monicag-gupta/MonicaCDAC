@@ -66,6 +66,11 @@ Now push the updated content to the online Repo
 
 git push 
 
+All developer in the team say, have pushed to the repo
+Now to remain updated, pull the repo in your folder
+
+git pull
+
 
 
 
