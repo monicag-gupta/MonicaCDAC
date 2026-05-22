@@ -209,6 +209,21 @@ As well as a summary of all tests together.
 
 
 
+Mockito:
+
+Annotations:
+@Mock: Creates a mock implementation for the specified class.
+@Mock : This annotation tells Mockito to create a mock instance of the CalculatorService interface.
+@InjectMocks: Creates an instance of the class and injects the mocks that are marked with the @Mock annotation into it.
+@InjectMocks : This annotation tells Mockito to inject the mock instances.
+@Before: Annotates a method that is run before each test. In this case, it initializes the mocks.
+MockitoAnnotations.openMocks(this): This line initializes the mock objects and processes the @Mock and @InjectMocks annotations.
+Mocking and Stubbing:
+when(calculatorService.add(10, 20)).thenReturn(30): 
+Defines the behavior of the mock object. 
+When the add method is called with arguments 10 and 20, it returns 30.
+verify(calculatorService).add(10, 20): 
+Verifies that the add method was called with arguments 10 and 20.
 
 
 
