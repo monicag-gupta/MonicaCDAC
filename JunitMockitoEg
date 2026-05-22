@@ -13,3 +13,34 @@ Here, Test is the file name.
 
 
 
+package pkg1;
+
+public class Main1 {
+
+	public static void main(String[] args) /*throws Exception */ {
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		System.out.println("Enter the person's weight:");
+		int weight = sc.nextInt();
+//		if( weight <= 20)
+//			throw new Exception("Weight is less");
+//		assert weight>=20;
+		assert weight>=20 : "Weight is less than required!";
+		
+		System.out.println("Weight is "+weight);
+				
+		sc.close();
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
