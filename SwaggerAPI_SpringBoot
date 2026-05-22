@@ -1,1 +1,18 @@
+Swagger is a tool used to:
+Document REST APIs 
+Test APIs in browser 
+Generate API information automatically 
+Provide interactive API UI 
+Nowadays, Swagger is commonly implemented using:
+OpenAPI 
+Swagger UI
+Swagger UI Example URL
+After configuration:
+http://localhost:8080/swagger-ui/index.html
+
+
+
+
+
+
 
