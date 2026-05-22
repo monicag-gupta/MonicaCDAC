@@ -62,6 +62,9 @@ Now commit
 git commit -m "Files updated"
 
 
+Now push the updated content to the online Repo
+
+git push 
 
 
 
