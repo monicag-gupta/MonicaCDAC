@@ -169,6 +169,11 @@ public class TestCases {
 
 
 
+Change logic of assertions test and check with the failure results as well.
+assertEquals(3,MainClass.findMax(new int[]{1,3,4,2}));
+Re-change to original values  
+
+
 
 
 
