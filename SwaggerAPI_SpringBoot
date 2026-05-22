@@ -31,6 +31,14 @@ Add Dependency:
 
 
 
+Run Application:
+Mvn clean
+mvn install
+mvn spring-boot:run
+
+
+
+
 
 
 
