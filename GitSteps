@@ -48,7 +48,9 @@ Add the files in the stash area
 git add .
 
 
+commit the files:
 
+git commit -m "Files updated"
 
 
 
