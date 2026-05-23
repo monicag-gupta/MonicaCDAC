@@ -1,0 +1,72 @@
+Docker
+Light Weight Virtualization: Docker
+Docker
+Overview
+From Wikipedia: Docker is open-source project that automates the deployment of software applications inside containers by providing an additional layer of abstraction and automation of OS-level virtualization on Linux.
+Docker offers a light weight virtualization
+Docker is light weight container 
+Docker image is a self-contained executable unit containing all that is needed for execution.
+Docker allows an application to execute within its own sandbox; it is a standardized package with all the dependencies that can be easily deployed.
+It is the core concept behind the emerging “containerization” movement.
+Container (https://docs.docker.com)
+An image is a lightweight, stand-alone, executable package that includes everything needed to run a piece of software, including the code, a runtime, libraries, environment variables, and config files.
+A container is a runtime instance of an image—what the image becomes in memory when actually executed. It runs completely isolated from the host environment by default, only accessing host files and ports if configured to do so.
+Containers run apps natively on the host machine’s kernel. They have better performance characteristics than virtual machines that only get virtual access to host resources through a hypervisor. Containers can get native access, each one running in a discrete process, taking no more memory than any other executable.
+
+VM vs Docker (our “stack”)
+Lets Understand Docker 
+All the following slides are based on http://docs.docker.com
+Install the latest version of the docker software: I guess the :container” idea comes from shipping containers!!??
+After installation click on the icon for cdocker
+A shell shows up; note the dynamic IP that appears and the prompt
+Now you can give some simple docker commands and check it out.
+
+Simple Docker Commands
+All docker commands are prefixed with “docker”
+All regular unix  shell commands like ls, mkdir, etc. can be directly typed in as such
+Try “ls” the entire directory listing will print out
+The try 
+
+docker run hello-world
+
+Since you dis not create any image for a docker app hello-world, it will go fetch one from docker repositories ad run it!
+
+docker –version
+It will display the version of docker you installed and are running.
+
+
+
+
+Understanding Docker through Examples
+Define a file Dockerfile will define what will go on inside your container. (somewhat similar to manifest file)
+
+
+How to create a Docker Image
+A simple starter image
+Create three files in an new folder
+Dockerfile: this is like the manifest file
+requirements.txt: what are the software needed for the execution of the application: in case its contents are REDIS (data storage) and Flask (python web framework)
+The application itself: in this case a python application: app.py
+The install the requirements:
+pip install –r requirements.txt
+ls
+Docker image steps
+docker build –t friendlyhello
+docker images
+docker run –p 4000:80 friendlyhello
+
+Check it on the web ip of your server and port #4000
+
+Many such containers of the same image (in this case friendlyhello) can be run and used.
+What else can we do?
+Create a swarm of containers using docker images>
+
+We can deploy an application onto a cluster, running it on multiple machines. Multi-container, multi-machine applications are made possible by joining multiple machines into a “Dockerized” cluster called a swarm.
+Hmm.. In that case can run MPI on this swarm cluster?
+
+http://ieeexplore.ieee.org/document/7868429/?reload=true
+
+Summary
+Many systems are being built using docker container technology.
+It provides light weight virtualization and resultant portability and performance.
+It makes deployment of applications very easy to manage.
