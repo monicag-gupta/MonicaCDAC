@@ -74,3 +74,154 @@ git pull
 
 
 
+The steps followed:
+
+Git & GitHub Exercise
+Project: EmployeeProject
+Objective
+Learn how to:
+•	Create a project folder 
+•	Initialize Git 
+•	Connect with GitHub 
+•	Push code 
+•	Make changes and track versions 
+
+Exercise 1: Create Project Folder
+Step 1: Create a folder
+Go to C:\ drive and create a folder named:
+C:\EmployeeProject
+Step 2: Open Command Prompt / VS Code Terminal
+Navigate to the folder:
+cd C:\EmployeeProject
+Explanation:
+•	cd means change directory 
+•	This tells the system: “Work inside this folder” 
+
+Exercise 2: Initialize Git
+Step 3: Initialize Git repository
+git init
+Explanation:
+•	This creates a hidden .git folder 
+•	Git starts tracking your project 
+
+Exercise 3: Create First File
+Step 4: Create a file
+Create a file named:
+employee.txt
+Add content:
+Employee Project
+Name: John
+Role: Developer
+
+Exercise 4: Check Git Status
+Step 5: Check file status
+git status
+Explanation:
+•	Shows: 
+o	Untracked files 
+o	Modified files 
+•	Currently, employee.txt is untracked 
+
+Exercise 5: Add File to Git
+Step 6: Add file
+git add employee.txt
+OR add all files:
+git add .
+Explanation:
+•	Moves file to staging area 
+•	Git is ready to save it 
+
+Exercise 6: Commit Changes
+Step 7: Commit
+git commit -m "First commit - added employee file"
+Explanation:
+•	A commit = snapshot of your project 
+•	-m adds a message explaining changes 
+
+Exercise 7: Connect to GitHub
+Step 8: Add remote repository
+git remote add origin https://github.com/monicag-gupta/EmployeeProject
+Explanation:
+•	Connects local project to GitHub 
+•	origin = name of remote repository 
+
+Exercise 8: Push Code to GitHub
+Step 9: Push code
+git branch -M main
+git push -u origin main
+Explanation:
+•	branch -M main → sets branch name 
+•	push → uploads code to GitHub 
+•	-u → links local and remote branch 
+
+Exercise 9: Make Changes
+Step 10: Update file
+Edit employee.txt:
+Employee Project
+Name: John
+Role: Senior Developer
+
+Step 11: Check changes
+git status
+
+Step 12: View differences
+git diff
+Explanation:
+•	Shows what changed in the file 
+
+Exercise 10: Commit Updated Code
+Step 13: Add and commit
+git add .
+git commit -m "Updated employee role"
+
+Step 14: Push again
+git push
+
+Exercise 11: Create New Branch
+Step 15: Create branch
+git checkout -b feature-update
+Explanation:
+•	Creates a new branch for changes 
+•	Keeps main code safe 
+
+Step 16: Make changes in branch
+Add:
+Department: IT
+
+Step 17: Commit changes
+git add .
+git commit -m "Added department"
+
+Exercise 12: Merge Branch
+Step 18: Switch to main
+git checkout main
+
+Step 19: Merge branch
+git merge feature-update
+Explanation:
+•	Combines branch changes into main 
+
+Exercise 13: View History
+Step 20: Check log
+git log
+Explanation:
+•	Shows all commits history 
+
+Exercise 14: Clone Repository
+Step 21: Clone project elsewhere
+cd C:\
+git clone https://github.com/monicag-gupta/EmployeeProject
+Explanation:
+•	Downloads project from GitHub 
+•	Useful for teamwork 
+
+Final Practice Tasks
+Add another employee
+Create a new branch for testing
+Delete a branch
+View commit history
+Push all changes to GitHub
+
+
+
+
